@@ -1,16 +1,40 @@
-# React + Vite
+            # E-Commerce Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **E-Commerce web application** built using **React.js and Vite**.  
+This project focuses on performance, clean architecture, and a professional user interface suitable for real-world applications.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+            ## Project Overview
 
-## React Compiler
+This application represents a frontend-based e-commerce platform where users can browse products and interact with a cart system.  
+It is designed with scalability and maintainability in mind, using modern frontend tools and best practices.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+            ## Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Product listing and display
+- Add to cart functionality
+- Responsive design for mobile, tablet, and desktop
+- Optimized and fast build using Vite
+- Clean and reusable component structure
+
+---
+
+           ## Technology Stack
+
+- React.js
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS / Tailwind CSS
+- Git & GitHub
+
+---
+
+          ## Getting Started
+
+          ### Install dependencies
+```bash
+npm install
