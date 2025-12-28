@@ -1,9 +1,9 @@
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Header from './components/header-components/header'
-import ImageSlider from './components/carousel-component/image-slider'
-import Footer from './components/footer-component/footer'
-import Main2 from './components/main-component/main2'
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/header-components/header.jsx";
+import ImageSlider from "./components/carousel-component/image-slider.jsx";
+import Footer from "./components/footer-component/footer.jsx";
+import Main2 from "./components/main-component/main2.jsx";
 
 function App() {
   return (
@@ -13,6 +13,6 @@ function App() {
       <Main2></Main2>
       <Footer></Footer>
     </>
-  )
+  );
 }
-export default App
+export default App;
