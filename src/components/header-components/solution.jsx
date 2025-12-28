@@ -1,8 +1,8 @@
 import { solutionIcons } from "./icons.jsx";
 import styles from "./header-styles/navbar-container.module.css";
-import { headerDataProvider } from "./headerstore";
+import { HeaderDataContext } from "./header-context.jsx";
 import { useContext } from "react";
-import ContactBox from "./contact-box";
+import ContactBox from "./contact-box.jsx";
 
 export default function SolutionBar() {
   const solution = [
@@ -140,7 +140,7 @@ export default function SolutionBar() {
     },
   ];
 
-  const { toggle2, hoverEnter, hoverLeave } = useContext(headerDataProvider);
+  const { toggle2, hoverEnter, hoverLeave } = useContext(HeaderDataContext);
 
   return (
     <>

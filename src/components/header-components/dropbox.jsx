@@ -1,6 +1,5 @@
 import GamezoneBar from "./gamezonebar.jsx";
-import { headerDataProvider } from "./headerstore.jsx";
-import styles from "./header-styles/navbar-container.module.css";
+import { HeaderDataContext } from "./header-context.jsx";
 import SoftwereBar from "./softwerebar.jsx";
 import SolutionBar from "./solution.jsx";
 import ServiceBar from "./servicebar.jsx";
@@ -8,7 +7,7 @@ import TechnologyBar from "./technologybar.jsx";
 import { useContext } from "react";
 
 export default function DropBox() {
-  const { toggle2 } = useContext(headerDataProvider);
+  const { toggle2 } = useContext(HeaderDataContext);
 
   return (
     <>

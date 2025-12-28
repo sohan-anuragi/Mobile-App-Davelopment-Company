@@ -1,12 +1,12 @@
 import { useContext, useState } from "react";
 import ArrowIcon from "./arrow-icon.jsx";
-import { headerDataProvider } from "./headerstore.jsx";
+import { HeaderDataContext } from "./header-context.jsx";
 import styles from "./header-styles/navbar-container.module.css";
 import { IoMenu } from "react-icons/io5";
 import DropBox from "./dropbox";
 
 export default function NavHeadings() {
-  const dropBoxDataFromContext = useContext(headerDataProvider);
+  const dropBoxDataFromContext = useContext(HeaderDataContext);
   const hoverEnterFromContext = dropBoxDataFromContext.hoverEnter;
   const hoverLeaveFromContext = dropBoxDataFromContext.hoverLeave;
 
