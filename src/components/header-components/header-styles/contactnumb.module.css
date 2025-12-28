@@ -1,0 +1,20 @@
+
+.contact-numb{
+    color: white;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+.phone-icon{
+    margin-right: 0.8rem;
+}
+
+@media (max-width:760px ){
+    html{
+       font-size: 12px;
+    }
+    .contact-numb{
+        font-size: 1.0.9rem;
+    }
+}
+   

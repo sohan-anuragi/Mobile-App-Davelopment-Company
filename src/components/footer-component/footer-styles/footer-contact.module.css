@@ -1,0 +1,192 @@
+/* STYLING FOR WHOLE CONTAINER  */
+
+.Contact-footer-container{
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #ffe6f0, #e0f7ff);
+    margin: 2rem 0.6rem;
+    padding: 2rem;
+    
+
+}
+
+.visible{
+    animation: fadeInUp 0.8s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Contact-footer-heading{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: black;
+    opacity: 0;
+    transform: translateY(70px);
+}
+
+.Contact-footer-para{
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* STYLING FOR CBTN-FORM-CONTAINER */
+
+.cbtn-form-container{
+    width: 100%;
+    min-width: 90%;
+    /* border: 1px solid pink; */
+    display: flex;
+}
+
+/* STYLING FOR CBTN-CONTAINER */
+
+.cbtn-container{
+    min-width: 50%;
+    /* border: 1px solid pink; */
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.mob-span{
+    padding: 2rem;
+    border: 1px solid pink;
+    border-radius: 30px;
+    margin-top: 2rem;
+    max-width: 25rem;
+}
+
+.numb{
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.phone-icon{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+/* STYLING FOR FORM CONTAINER */
+
+.form-container{
+    min-width:30%;
+    /* border: 1px solid pink; */
+    padding: 1rem;
+    padding-top: 3rem;
+}
+
+.input-name{
+    padding: 0.5rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 45%;
+
+}
+
+.select-service{
+    padding: 0.55rem;
+    border: none;
+    margin-left: 15px;
+    background-color: white;
+    width: 45%;
+    padding-left: 0.5rem;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.764);
+    overflow: auto;
+}
+
+.textarea{
+    padding: 1rem;
+    
+    margin-top: 15px;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    width: 92%;
+
+}
+
+.submit-btn{
+    border:none;
+    background-color: rgb(80, 109, 238);
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-left: 15px;
+    margin-top: 30px;
+    width: 92%;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.submit-btn:hover{
+    background-color: rgb(255, 115, 0);
+    transition: all 0.3s ease ;
+}
+
+
+
+/* RESPONSIVE DESIGN FOR CONTACT-FOOTER */
+
+@media (max-width:1000px){
+
+   html{
+      font-size: 13px;
+    }
+    .input-name{
+        width: 90%;
+    }
+    .select-service{
+        width: 90%;
+    }
+    .textarea{
+        width: 90%;
+    }
+}
+
+@media (max-width:800px){
+
+   html{
+      font-size: 13px;
+    }
+
+    .input-name{
+        flex: 1;
+        display: block;
+        width: 90%;
+    }
+    .select-service{
+        width: 90%;
+    }
+    .form-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-right: 2rem;
+    }
+    .cbtn-form-container{
+        flex-direction: column;
+    }
+    .textarea{
+        width: 90%;
+    }
+
+}

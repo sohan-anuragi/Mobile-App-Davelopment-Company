@@ -1,0 +1,88 @@
+.outer-container{
+    padding: 0.5rem;
+    background: linear-gradient(to right, #ffffff, #fbf2f4);
+    margin: 0.5rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+}
+
+.heading{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.imgs{
+    max-width: 80%;
+    background-color: white;
+    margin-top: 1rem;
+    margin-left: rem;
+    height: 17rem;
+}
+
+.img-container{
+   max-width: 30%;
+   border: 1;
+   margin-left: 1rem;
+   margin-top: 1rem;
+   width: 10rem;
+   min-width: 17rem;
+   height: 20rem;
+   min-height: 8rem;
+   background-color: white;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.5s ease ;
+   opacity: 0;
+   transform: translateX(-300px);
+}
+
+.animate-in {
+  animation: slideInFromLeft 1s ease forwards;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* HOVER-EFFECT */
+
+.img-container:hover{
+    transform: scale(1.04) translateY(-10px);
+    background-color: rgb(249, 237, 239);
+}
+
+.client-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* STYLING FOR RESPONSIVENESS */
+
+@media (max-width: 800px){
+  
+.img-container{
+   max-width: 30%;
+   width: 13rem;
+   min-width: 12rem;
+   min-height: 8rem;
+}
+
+   html{
+    font-size: 12px;
+   }
+
+}

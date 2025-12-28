@@ -1,0 +1,64 @@
+.outer-container{
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.outer-fixed-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+    padding: 4rem;
+    background-color: rgba(0, 0, 0, 0.442);
+    z-index: 6000;
+}
+
+.carousel-heading{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: black;
+    
+}
+
+.carousel-heading2{
+    animation: headingAnimate 0.8s ease-out forwards;
+}
+
+@keyframes headingAnimate {
+    0%{
+        transform: translateY(-5rem);
+        opacity: 0;
+    }
+    100%{
+       transform: translateY(-0rem);
+        opacity: 1; 
+    }
+}
+
+.carousel-para{
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cross-btn{
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    z-index: 7000;
+    font-size: 2rem;
+    color: white;
+    background-color:transparent;
+    cursor: pointer;
+}
+
+.no-cross-btn{
+    display: none;
+}

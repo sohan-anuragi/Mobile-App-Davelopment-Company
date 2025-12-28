@@ -1,0 +1,167 @@
+/* STYLING FOR ENTIRE CONTAINER  */
+
+.ourservices-container{
+   background: linear-gradient(to bottom right, #e6fee6, #f9e1ed);
+   padding: 3rem;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   margin: 1rem;
+   border-radius: 10px;
+}
+
+/* STYLING FOR OURSERVICES SECTION  */
+
+.ourservices-para1{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(0, 195, 255);
+    display: block;
+    text-align: center;
+     /* transform: translateY(-100px);
+        opacity: 0; */
+}
+
+.heading{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    /* transform: translateY(-100px);
+    opacity: 0; */
+}
+
+.heading2{
+    /* transform: translateY(-100px);
+        opacity: 0; */
+    animation: animate2 0.8s ease-out forwards;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-0px);
+        opacity: 1;
+    }
+}
+
+
+.ourservices-para2{
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+     /* transform: translateY(-100px);
+        opacity: 0; */
+}
+
+
+/* STYLING FOR SERVICESCARDS-COMPONENT */
+
+.cards-container{
+    padding: 1re;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.card-container{
+    max-width: 25.5rem;
+    margin-left: 1rem;
+    min-width: 20rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.4s ease;
+    /* transform: translateX(-30rem);
+    opacity: 0; */
+}
+
+.card-container2{
+    animation: animate 1s ease-out forwards;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateX(-30rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(-0rem);
+        opacity: 1;
+        
+    }
+}
+
+.icon-container{
+    font-size: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card-heading{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-para{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.card-btn{
+    background-color: rgb(0, 157, 255);
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border: none;
+    margin-top: 1rem;
+}
+
+.service-btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+   
+}
+
+.service-btn{
+   background-color: rgb(255, 106, 0);
+   border: none;
+   padding: 0.5rem;
+   font-size: 1rem;
+   color: white;
+   border-radius: 5px;
+   padding-left: 1rem;
+   padding-right: 1rem;
+}
+
+/* STYLING FOR HOVER-EFFECT */
+
+.card-container:hover{
+    
+    transform: translateY(-10px) scale(1.02);
+    background-color: rgb(253, 215, 222);
+}
+
+.card-btn:hover{
+    background-color: rgb(255, 128, 0);
+    transition: all 0.4s ease;
+}
+
+
+/* STYLING FOR RESPONSIVENESS */
+
+@media(max-width: 1200px){
+    .card-container{
+    max-width: 45%;
+}
+}
+
+@media(max-width: 700px){
+    .card-container{
+    max-width: 100%;
+    margin-left: 0rem;
+}
+}

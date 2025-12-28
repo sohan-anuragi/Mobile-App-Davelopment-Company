@@ -1,0 +1,34 @@
+.contact-var-container{
+   background-color: black;
+   min-height: 2.8rem;
+   margin-top: 0.5rem;
+   margin-left: 0.5rem;
+   margin-right:0.5rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+/* RESPONSIVE FOR MOBILE  */
+
+@media (max-width:760px ){
+    html{
+       font-size: 12px;
+    }
+    .contact-ul{
+        margin-right: 1rem;
+    }
+    .contact-var-container{
+   min-height: 3.5rem;
+}
+}
+
+@media (max-width:400px ){
+    html{
+       font-size: 11px;
+    }
+    .contact-ul{
+        margin-right: 2rem;
+    }
+}

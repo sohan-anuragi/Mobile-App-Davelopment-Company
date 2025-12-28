@@ -1,0 +1,61 @@
+.outer-container{
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.heading{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.para{
+    display: block;
+    text-align:center;
+    color: black;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+/* SWIPPER SLIDER STYLING */
+
+
+/* CommentSlider.module.css */
+/* CommentSlider.module.css */
+
+.commentSliderContainer {
+  max-width: 1250px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.commentBox {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  /* text-align: center; */
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-left: rem;
+  padding: 2rem;
+  /* justify-content: center; */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.commentBox p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 1rem;
+}
+
+.commentBox h4 {
+  font-size: 14px;
+  color: #555;
+  margin-top: 1rem;
+  text-align: start;
+  display: block;
+}

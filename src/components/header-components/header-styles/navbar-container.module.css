@@ -1,0 +1,328 @@
+/* STYLING FOR NAVBAR-CONTAINER  */
+
+.navbar-container{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: white;
+    position: sticky;
+    z-index: 5000;
+    top: 0rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.466);
+}
+
+/* STYLING FOR NAVBAR-LOGO */
+
+.navbar-logo{
+    height: 3.5rem;
+    width: 9rem;
+    /* border: 1px solid black; */
+    /* margin-top: 1rem;
+    margin-bottom: 1rem; */
+    /* margin-left: 3rem; */
+    display: inline-block;
+    z-index: 5000;
+}
+
+.logo-img{
+    height: 100%;
+    width: 100%;
+}
+
+/* STYLING FOR HEADINGS */
+
+/* STYLING FOR HEADINGS-CONTAINER */
+
+.headings-container{
+    display: flex;
+    height: 100%;
+     height: 3.5rem;
+     background-color: white;
+}
+
+.heading-container{
+    margin-left: 3rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+   
+}
+
+.heading-span{
+    font-weight: 620;
+    color: rgb(2, 2, 53);
+    font-size: 1.05rem;
+}
+
+.arrow-btn{
+    border: none;
+    background-color: white;
+}
+
+.heading-container:hover .heading-span{
+    color: rgb(255, 102, 0);  
+    transition: color 0.3s ease;
+}
+
+.heading-container:hover .arrow-btn{
+    color: rgb(255, 102, 0); 
+    transition: color 0.3s ease; 
+}
+
+/* STYLING FOR EXTRA BUTTON */
+
+.heading-containerr{
+    height: 2.3rem;
+    /* width: 10rem; */
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+   background: linear-gradient(to right, rgb(255, 64, 0), rgba(255, 106, 0, 0.647) );
+   margin-left: 3rem;
+   border-radius: 5px;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   text-decoration: none;
+       
+}
+
+.heading-spann{
+    color: white;
+    font-weight: 600;
+}
+
+/* STYLING FOR DROP BOX */
+
+
+.drop-box{
+    display: flex;
+    /* border: 1px solid black; */
+    padding: 0.7rem;
+    border-radius: 10px 10px 0px 0px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.drop-box2{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    position: absolute;
+    right: 7rem;
+    top: 5rem;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    position: fixed;
+    z-index: 1000;
+    opacity: 1;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    /* transform: translateY(10px); */
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    /* transform: translateY(0); */
+  }
+}
+
+/* STYLING FOR DROP-BOX */
+
+.inner-box{
+   min-width: 16rem;
+   margin-top: 1rem;
+   margin-left: 1rem;
+   margin-left: 2rem;
+   flex: 1;
+   
+}
+
+.inner-a{
+    display: flex;
+    align-items: center;
+    min-height: 2rem;
+    margin: 0.2rem 0rem;
+    margin-left: 0.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(6, 6, 51);
+}
+
+.heading-div{
+    font-weight: 600;
+}
+
+.icon-span{
+    color: rgb(255, 64, 0) ;
+    margin-right: 0.4rem;
+}
+
+.heading-div:hover{
+    color: rgb(0, 140, 255);
+    transition: color 0.3s ease; 
+}
+
+.gamezone-div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+}
+
+.gamezone-a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    margin-right: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.269);
+    color: rgb(11, 130, 130);
+    height: 2rem;
+    border-radius: 10px;;
+}
+
+/* STYLING FOR CONTACT-BOX */
+
+.contact-box{
+    background-color: #f8f8f8;
+    padding: 1rem 2rem;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+
+.contact-heading{
+    padding: 0.2rem;
+    margin: 1rem 0rem;
+    color: rgba(28, 5, 49, 0.917);
+    border-radius:10px;
+    display: inline-block;
+}
+
+.contactnum-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-container2{
+    /* border: 1px solid black; */
+    display: inline-block;
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    margin-left: 2rem;
+    background-color: white;
+}
+
+.phone-icon{
+    margin-right: 0.4rem;
+}
+.contact-numb2{
+    text-decoration: none;
+    color: rgb(255, 102, 0);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.h6{
+    margin-top: 0.2rem;
+    margin-left: 1.9rem;
+    font-weight: 400;
+    color:rgba(0, 0, 0, 0.451)
+}
+
+.heading-containerrr{
+    padding: 0;
+}
+
+/* HIDDEN THINGS  */
+
+.menu-btn{
+    display: none; 
+}
+
+.menu-icon{
+    font-size: 4rem;
+}
+
+.headings-container-responsive{
+   display: none;
+}
+
+/* STYLING FOR RESPONSIVE DESIGN */
+
+@media (max-width:1030px){
+
+    html{
+        font-size: 12;
+    }
+   
+    .drop-box2{
+        /* right: 2rem;
+        position:absolute;
+        top: 0rem;
+        margin-top: 0rem;
+        right: 0.1rem; */
+        position: static;
+        min-height: auto;
+         overflow: auto; 
+        overflow: scroll; 
+        overflow: hidden; 
+    }
+    .navbar-container{
+        position: static;
+    }
+    .menu-btn{
+        display: block;
+    }
+
+    .headings-container{
+        display: none;
+    }
+
+    .heading-container{
+        padding: 0.8rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        margin-left: 0.2rem;
+        /* position: relative; */
+        min-width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+       
+    }
+    .arrow-btn{
+        background-color:rgb(242, 242, 242) ;
+    }
+
+    .heading-containerr{
+        display: none;
+        
+    }
+    
+    .headings-container-responsive{
+        display: block;
+        background-color: rgb(242, 242, 242); 
+        max-height: 70vh;     
+        overflow-y: auto;     
+    }
+    .navbar-container{
+        display: flex;
+        justify-content: space-between ;
+    }
+
+}
+
+/* HOVER SMOOTH EFFECT  */

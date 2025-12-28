@@ -1,0 +1,56 @@
+.img1 {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.info-container {
+  position: absolute;
+  z-index: 12;
+  left: 5rem;
+  top: 8rem;
+  color: white;
+}
+
+.carousel-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  transform: translateX(-100px);
+  opacity: 0;
+  animation: heading 0.5s ease forwards;
+}
+
+@keyframes heading {
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.carousel-para {
+  font-size: 1.1rem;
+  margin-top: 1.4rem;
+}
+
+.carousel-btn {
+  padding: 0.7rem;
+  background: linear-gradient(to bottom, #ff4500, #ff8c00, #ffd500);
+  color: white;
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 30px;
+  font-weight: 700;
+  margin-top: 1.2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.carousel-btn:hover {
+  background: linear-gradient(to bottom, #ff4400, #ffbb00, #fff200);
+}

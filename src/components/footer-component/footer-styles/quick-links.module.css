@@ -1,0 +1,139 @@
+/* STYLING FOR QUICKLINKS-CONTAINER */
+
+.quicklinks-container{
+    padding: 1rem;
+    background-color: black;
+    margin: 1rem;
+    margin-bottom: 0px;
+}
+
+.ql1-container{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 192, 203, 0.274);
+    flex-wrap: wrap;
+    max-width: auto;
+}
+
+.links-container{
+    max-width: 24%;
+    min-width: 15rem;
+    margin-top: 1.5rem;
+    height: auto;
+    margin-left: 0.4rem;
+}
+
+.ql1-heading{
+    padding: 0.4rem;
+    text-align: center;
+    color: white;
+}
+
+.link-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    
+}
+
+.ql-a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding-right: 0.4rem;
+    margin-left: 1rem;
+    border-right: 1px solid white;
+    height: 1.2rem;
+    margin-top: 1rem;
+}
+
+
+/* RESPONSIVE DESIGN FOR QUICK-LINKS1 */
+
+@media (max-width: 1200px) {
+  .links-container {
+    min-width: 23rem;
+  }
+
+  .servicelinks-container{
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+
+
+/* STYLING FOR SERVICE-LINKS */
+
+.service-heading-container{
+    padding: 1rem;
+    background-color: black;
+    margin: 1rem;
+    margin-top: 0px;
+    padding: 3rem;
+    margin-bottom: 0rem;
+    border-bottom: 1px solid rgba(255, 192, 203, 0.292);
+}
+
+.service-heading{
+    color: white;
+}
+
+.servicelinks-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.obj-container{
+    margin-top: 2rem;
+}
+
+.data-container{
+    display: flex;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.span-icon{
+    color: white;
+    font-size: 1.5;
+}
+
+.heading-container{
+    color: white;
+    font-size: 1.2;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-left: 0.6rem;
+}
+
+/* STYLING FOR COPYRIGHT SECTION */
+
+.copyright-container{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    margin-top: 0rem;
+    padding: 3rem;
+}
+
+.copyright-para{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.copyright-a{
+    text-decoration: none;
+    color: rgb(162, 232, 208);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 0.1rem;
+}
+

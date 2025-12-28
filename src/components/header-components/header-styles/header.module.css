@@ -1,0 +1,10 @@
+.nav-bar-container{
+    position: sticky;
+    top: 0rem;
+    z-index: 100;
+}
+
+.check{
+    height: 1000px;
+    background-color: rgb(182, 241, 241);
+}

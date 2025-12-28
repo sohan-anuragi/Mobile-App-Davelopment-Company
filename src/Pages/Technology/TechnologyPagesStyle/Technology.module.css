@@ -1,0 +1,218 @@
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.overlay-text h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 0 1rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .overlay-text h1 {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-text h1 {
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+  }
+
+  .image-container {
+    height: 15rem;
+  }
+}
+
+/* Content Section Styling */
+
+.content-section {
+  padding: 2rem 2rem;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  font-family: "Inter", sans-serif;
+}
+
+.intro-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #121212;
+  margin-bottom: 2rem;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  font-family: "Inter", sans-serif;
+}
+
+.main-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #161616;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Highlight Style for Double Quoted Text */
+
+.highlight {
+  font-weight: 700;
+  color:black;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 0.2rem;
+}
+
+/* Link Style for Single Quoted Text */
+
+.link-style {
+  font-weight: 700;
+  color: #00a8cc;
+  text-decoration: none;
+  position: relative;
+  margin: 0 0.2rem;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 1.1rem;
+  font-family: "Inter", sans-serif;
+}
+
+.link-style:hover {
+  color: #0088aa;
+  border-bottom-color: #00a8cc;
+}
+
+/* Responsive Design for Content */
+
+@media (max-width: 768px) {
+  .content-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .intro-paragraph,
+  .main-paragraph {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .intro-paragraph,
+  .main-paragraph {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .highlight {
+    padding: 0.15rem 0.4rem;
+  }
+}
+
+/* Benefits Section Styling */
+
+.benefits-section {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(0, 168, 204, 0.3);
+}
+
+.benefits-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits-list li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.benefits-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #00a8cc;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Responsive Benefits Section */
+
+@media (max-width: 768px) {
+  .benefits-heading {
+    font-size: 1.3rem;
+  }
+
+  .benefits-list li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefits-heading {
+    font-size: 1.1rem;
+  }
+
+  .benefits-list li {
+    font-size: 0.9rem;
+    padding-left: 1.2rem;
+  }
+}

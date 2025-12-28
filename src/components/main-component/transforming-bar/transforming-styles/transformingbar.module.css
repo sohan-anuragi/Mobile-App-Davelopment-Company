@@ -1,0 +1,134 @@
+/* STYLING FOR WHOLE CONTAINER */
+
+.transformingbar-container{
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+  
+}
+
+.transformingbar-img{
+    background-color: white;
+}
+
+.transformingbar-img2{
+    animation: imgAnimate 1s ease-out forwards;
+}
+
+@keyframes imgAnimate {
+    0%{
+        transform: translateX(-30rem);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
+
+.gemini{
+    width:  100% ;
+    margin-top: 2rem;
+}
+
+
+
+.transformingbar-texts{
+    padding: 3rem;
+    margin-left: 6rem; 
+}
+
+.transformingbar-text2{
+    animation: textAnimate 1s ease-out forwards;
+}
+
+@keyframes textAnimate {
+    0%{
+        transform: translateX(30rem);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
+
+.transformingbar-para1{
+    color: rgb(5, 65, 118);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.transformingbar-heading{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.transformingbar-para2{
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.partner-logo-container{
+    display: flex;
+}
+
+.logo-container{
+    height: 5rem;
+    width: 5rem;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: black;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.partner-heading{
+    font-weight: 700;
+}
+
+.partner-para{
+    font-size: 1.1rem;
+}
+
+/* RESPONSVE-STYLING FOR TRANSFORMING */
+
+@media(max-width:1200px){
+    .transformingbar-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .transformingbar-texts{
+    margin-left: 2rem;
+    }
+  
+}
+
+@media(max-width:600px){
+ 
+    html{
+        font-size: 13px;
+    }
+
+    .transformingbar-heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+   
+  
+}
+
+@media(max-width:500px){
+   
+    .logo-container{
+    height: 3rem;
+    width: 5rem;
+    }
+  
+}

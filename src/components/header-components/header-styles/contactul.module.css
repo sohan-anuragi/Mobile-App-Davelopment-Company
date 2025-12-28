@@ -1,0 +1,39 @@
+
+.contact-ul{
+    margin-right: 6rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0rem;
+}
+
+.contact-li{
+    height: 1.5rem;
+    width: 1.5rem;
+    text-decoration: none;
+    background-color: white;
+    margin-left: 0.5rem;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.fb {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+@media (max-width:760px ){
+    html{
+       font-size: 12px;
+    }
+    .contact-ul{
+        margin-right: 1rem;
+    }
+    
+}
+   
