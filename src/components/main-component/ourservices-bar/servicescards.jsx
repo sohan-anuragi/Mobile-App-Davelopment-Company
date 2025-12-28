@@ -6,6 +6,7 @@ import { FaRobot } from "react-icons/fa6";
 import { MdMonitor } from "react-icons/md";
 import styles from "./ourservices-styles/ourservices.module.css";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function ServicesCards() {
   const servicesCards = [
@@ -67,29 +68,28 @@ export default function ServicesCards() {
   }, []);
 
   return (
-    <>
-      <div className={styles["cards-container"]}>
-        {servicesCards.map((cards, index) => (
-          <div
-            className={`${styles["card-container"]} ${
-              visible[index] ? styles["card-container2"] : ""
-            }`}
-            ref={(el) => (ref.current[index] = el)}
-          >
-            <div className={styles["icon-container"]}>{cards.icon}</div>
-            <h4 className={styles["card-heading"]}>{cards.heading}</h4>
-            <p className={styles["card-para"]}>{cards.text}</p>
-            <a href={cards.link || "#"}>
-              <button
-                type="button"
-                class={`${styles["card-btn"]} btn btn-primary`}
-              >
-                Read More
-              </button>
-            </a>
-          </div>
-        ))}
-      </div>
-    </>
+    <div className={styles["cards-container"]}>
+      {servicesCards.map((cards, index) => (
+        <div
+          className={`${styles["card-container"]} ${
+            visible[index] ? styles["card-container2"] : ""
+          }`}
+          ref={(el) => (ref.current[index] = el)}
+          key={index}
+        >
+          <div className={styles["icon-container"]}>{cards.icon}</div>
+          <h4 className={styles["card-heading"]}>{cards.heading}</h4>
+          <p className={styles["card-para"]}>{cards.text}</p>
+          <Link to={cards.link || "#"}>
+            <button
+              type="button"
+              className={`${styles["card-btn"]} btn btn-primary`}
+            >
+              Read More
+            </button>
+          </Link>
+        </div>
+      ))}
+    </div>
   );
 }

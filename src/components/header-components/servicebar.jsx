@@ -3,6 +3,7 @@ import { serviceIcons } from "./icons";
 import { HeaderDataContext } from "./header-context.jsx";
 import { useContext } from "react";
 import ContactBox from "./contact-box.jsx";
+import { Link } from "react-router-dom";
 
 export default function ServiceBar() {
   const service = [
@@ -97,27 +98,29 @@ export default function ServiceBar() {
   const { toggle2, hoverEnter, hoverLeave } = useContext(HeaderDataContext);
 
   return (
-    <>
-      <div
-        className={styles["drop-box2"]}
-        onMouseEnter={() => hoverEnter(toggle2)}
-        onMouseLeave={() => hoverLeave()}
-      >
-        <div className={styles["drop-box"]}>
-          {service.map((colum) => (
-            <div className={styles["inner-box"]}>
-              <h5 className={styles["heading"]}>{colum.heading}</h5>
-              {colum.textIcon.map((ram) => (
-                <a href={ram.link} className={styles["inner-a"]}>
-                  <span className={styles["icon-span"]}>{ram.icon}</span>
-                  <div className={styles["heading-div"]}>{ram.text}</div>
-                </a>
-              ))}
-            </div>
-          ))}
-        </div>
-        <ContactBox></ContactBox>
+    <div
+      className={styles["drop-box2"]}
+      onMouseEnter={() => hoverEnter(toggle2)}
+      onMouseLeave={() => hoverLeave()}
+    >
+      <div className={styles["drop-box"]}>
+        {service.map((colum, index) => (
+          <div key={index} className={styles["inner-box"]}>
+            <h5 className={styles["heading"]}>{colum.heading}</h5>
+            {colum.textIcon.map((ram, idx) => (
+              <Link
+                key={idx}
+                to={ram.link || "#"}
+                className={styles["inner-a"]}
+              >
+                <span className={styles["icon-span"]}>{ram.icon}</span>
+                <div className={styles["heading-div"]}>{ram.text}</div>
+              </Link>
+            ))}
+          </div>
+        ))}
       </div>
-    </>
+      <ContactBox />
+    </div>
   );
 }
