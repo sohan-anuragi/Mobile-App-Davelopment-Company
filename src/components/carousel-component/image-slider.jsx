@@ -1,8 +1,8 @@
-import appImg from "./carousel-img/app-dav2.jpg";
-import bcImg from "./carousel-img/blockchain.jpg";
+import appImg from "./carousel-img/app-dav2.webp";
+import bcImg from "./carousel-img/blockchain.webp";
 import styles from "./carousel-style/carousel.module.css";
-import eComImg from "./carousel-img/ecommerce.png";
-import aiImg from "./carousel-img/ai.jpg";
+import eComImg from "./carousel-img/ecommerce.webp";
+import aiImg from "./carousel-img/ai.webp";
 import { Link } from "react-router-dom";
 
 // ✅ Note: Ensure you import bootstrap JS in main.jsx/index.js for carousel functionality
@@ -68,6 +68,7 @@ export default function ImageSlider() {
           <img
             src={appImg}
             className={`${styles["img1"]} d-block w-100`}
+            loading="lazy"
             alt="App Development"
           />
         </div>
@@ -94,6 +95,7 @@ export default function ImageSlider() {
           <img
             src={eComImg}
             className={`${styles["img1"]} d-block w-100`}
+            loading="lazy"
             alt="E-commerce"
           />
         </div>
@@ -119,6 +121,7 @@ export default function ImageSlider() {
           <img
             src={bcImg}
             className={`${styles["img1"]} d-block w-100`}
+            loading="lazy"
             alt="Blockchain"
           />
         </div>
@@ -144,6 +147,7 @@ export default function ImageSlider() {
           <img
             src={aiImg}
             className={`${styles["img1"]} d-block w-100`}
+            loading="lazy"
             alt="AI"
           />
         </div>
